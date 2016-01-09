@@ -100,9 +100,9 @@ if __name__ == '__main__':
     find_most_frequent(words, num)
     html_parser.clean()
 
-    """ Notes on how this could be improved:
-    No real error checking as of right now. Would implement some exception
-    and error handling with more time. Examples, Input Handling, timeout errors
+    """ Notes for improvement:
+    No real error checking as of right now. Could use some exception
+    and error handling. Examples, Input Handling, timeout errors
 
     Currently not able to parse contraction words appropriately
     """

@@ -2,7 +2,6 @@
 
 import os
 import sys
-import argparse
 
 """ Rotater uses convert which takes an argument (Convert can be switched out to other engines)
 of clockwise in degrees when doing rotations as well as extension for the type of file it will look for """
@@ -19,4 +18,8 @@ def rotater(ccDegrees, ext_type):
          os.system(cmd)
 
 if __name__ == "__main__":
+        if (sys.argv[1] == "-h" or sys.argv[1] == "--help"):
+            print "Usage: rotater <rotation_clockwise_degrees> <file_ext_type"
+            print "Example: rotater 90 jpg"
+            sys.exit()
         rotater(sys.argv[1], sys.argv[2])
