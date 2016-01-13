@@ -8,7 +8,7 @@ of clockwise in degrees when doing rotations as well as extension for the type o
 def rotater(ccDegrees, ext_type):
   extension = "." + ext_type
   print extension
-  files = os.listdir(".")
+  files = os.listdir(os.curdir)
   for f in files:
      real_file = os.path.realpath(f)
      file_type = os.path.splitext(real_file)
